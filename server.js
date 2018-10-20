@@ -1,3 +1,7 @@
+if (process.env.NODE_ENV !== "production") {
+  require("dotenv").load();
+}
+
 const express = require("express");
 const MongoClient = require("mongodb").MongoClient;
 const bodyParser = require("body-parser");
@@ -11,12 +15,14 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 MongoClient.connect(
   db.url,
-  (err, database) => {
+  (err, client) => {
     if (err) return console.log(err);
+    database = client.db("simple-express-chin");
     require("./app/routes")(app, database);
 
     app.listen(port, () => {
       console.log("We are live on " + port);
+      console.log("env", process.env.DB_USER);
     });
   }
 );

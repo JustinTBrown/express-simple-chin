@@ -1,0 +1,11 @@
+{
+  "env": {
+    "DB_USER": "@db_user",
+    "DB_PASS": "@db_pass"
+  },
+  "build": {
+    "env": {
+      "NODE_ENV": "production"
+    }
+  }
+}
