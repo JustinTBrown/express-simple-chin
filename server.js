@@ -24,6 +24,7 @@ MongoClient.connect(
     app.listen(port, () => {
       console.log("We are live on " + port);
       console.log("env", process.env.DB_USER);
+      console.log("Whuz the port?: ", process.env.PORT);
     });
   }
 );
