@@ -15,6 +15,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 MongoClient.connect(
   db.url,
+  { useNewUrlParser: true }, // To avoid deprecation warning
   (err, client) => {
     if (err) return console.log(err);
     database = client.db("simple-express-chin");
