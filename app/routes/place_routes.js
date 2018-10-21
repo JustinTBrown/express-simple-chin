@@ -33,7 +33,6 @@ module.exports = function(app, db) {
       if (err) {
         res.send({ error: "An error has occured" });
       } else {
-        console.log("place: ", place);
         res.send(place);
       }
     });

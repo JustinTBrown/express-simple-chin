@@ -9,7 +9,7 @@ const db = require("./config/db");
 
 const app = express();
 
-console.log("Whuz the port?: ", process.env.PORT);
+// This checks if PORT is already set (ie. it is on heroku), if not it uses 8000
 const port = process.env.PORT || 8000;
 
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -24,7 +24,6 @@ MongoClient.connect(
 
     app.listen(port, () => {
       console.log("We are live on " + port);
-      console.log("env", process.env.DB_USER);
     });
   }
 );
