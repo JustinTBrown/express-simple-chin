@@ -9,7 +9,8 @@ const db = require("./config/db");
 
 const app = express();
 
-const port = 8000;
+console.log("Whuz the port?: ", process.env.PORT);
+const port = process.env.PORT || 8000;
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
@@ -24,7 +25,6 @@ MongoClient.connect(
     app.listen(port, () => {
       console.log("We are live on " + port);
       console.log("env", process.env.DB_USER);
-      console.log("Whuz the port?: ", process.env.PORT);
     });
   }
 );
