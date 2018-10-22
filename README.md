@@ -6,7 +6,7 @@ This project will require `.env` with the credentials.
 
 ## Development
 
-`npm run dev` to open on [http://localhost:8000/](localhost:8000)
+`npm run dev` to open on [localhost:8000/](http://localhost:8000/)
 
 ## Staging
 
