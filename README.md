@@ -6,12 +6,12 @@ This project will require `.env` with the credentials.
 
 ## Development
 
-`npm run dev` to open on [localhost:8000/](http://localhost:8000/)
+`npm run dev` to open on [localhost:8000](http://localhost:8000/)
 
 ## Staging
 
 Automatically deploys to Heroku on each `git push origin master`.
-Staging: [https://enigmatic-ravine-55800.herokuapp.com/](https://enigmatic-ravine-55800.herokuapp.com/)
+Staging: [https://enigmatic-ravine-55800.herokuapp.com](https://enigmatic-ravine-55800.herokuapp.com/)
 
 ### Alternate
 
