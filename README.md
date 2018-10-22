@@ -2,11 +2,11 @@
 
 Following [this tutorial](https://medium.freecodecamp.org/building-a-simple-node-js-api-in-under-30-minutes-a07ea9e390d2)
 
-This project will require `/config/db.js` with the settings and credentials.
+This project will require `.env` with the credentials.
 
 ## Development
 
-`npm run dev` to open on [localhost:8000](localhost:8000)
+`npm run dev` to open on [http://localhost:8000/](localhost:8000)
 
 ## Staging
 
